@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // baseURL: 'http://localhost:3000',
-  baseURL: 'https://swip-ex-server-qdwmyu10u-hiran-raj-s-projects.vercel.app/',
+  baseURL: 'https://swip-ex-server-qdwmyu10u-hiran-raj-s-projects.vercel.app',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -73,7 +73,7 @@ api.interceptors.response.use(
       }
 
       try {
-        const response = await axios.post('http://localhost:5000/auth/refresh', {
+        const response = await axios.post('/auth/refresh', {
           refreshToken,
         });
 
