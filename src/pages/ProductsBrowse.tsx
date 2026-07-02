@@ -263,6 +263,7 @@ const ProductsBrowse: React.FC = () => {
                           {prod.condition.replace('_', ' ')}
                         </span>
                       )}
+                      
                     </div>
 
                     {/* Meta */}

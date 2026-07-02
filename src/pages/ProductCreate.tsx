@@ -179,6 +179,7 @@ const ProductCreate: React.FC = () => {
     if (originalPrice) formData.append('original_price', originalPrice);
     formData.append('condition', condition);
     formData.append('category_id', categoryId);
+    formData.append('category_name', categoriesData?.data?.find((cat: any) => cat.id === categoryId)?.category_name || '');
     formData.append('location', location);
     formData.append('age', age);
 
